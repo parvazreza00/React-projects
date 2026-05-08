@@ -1,0 +1,74 @@
+[
+  {
+    "cardTitle": "Card title",
+    "cardSubtile": "Card subtitle",
+    "cardDes": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem vero placeat autem ab reiciendis iusto dolores libero repellendus nam",
+    "cardImage": "https://www.vanquis.com/wp-content/uploads/2025/12/VanquisCards_Midnight-2.webp",
+    "address": {
+      "street": "kuril-kuratoli",
+      "home": "ka/163"
+    },
+    "phones": [
+      {
+        "home": "01738920277"
+      },
+      {
+        "office": "029999999"
+      }
+    ]
+  },
+  {
+    "cardTitle": "2 Card title",
+    "cardSubtile": "2 Card subtitle",
+    "cardDes": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem vero placeat autem ab reiciendis iusto dolores libero repellendus nam",
+    "cardImage": "https://www.vanquis.com/wp-content/uploads/2025/12/VanquisCards_Midnight-2.webp",
+    "address": {
+      "street": "kuril-kuratoli-purbopara",
+      "home": "ka/164"
+    },
+    "phones": [
+      {
+        "home": "01938920000"
+      },
+      {
+        "office": "0290099111"
+      }
+    ]
+  },
+  {
+    "cardTitle": "3 Card title",
+    "cardSubtile": "3 Card subtitle",
+    "cardDes": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem vero placeat autem ab reiciendis iusto dolores libero repellendus nam",
+    "cardImage": "https://www.vanquis.com/wp-content/uploads/2025/12/VanquisCards_Midnight-2.webp",
+    "address": {
+      "street": "kuril-kuratoli-hazibari",
+      "home": "ka/165"
+    },
+    "phones": [
+      {
+        "home": "01738920233"
+      },
+      {
+        "office": "029991111"
+      }
+    ]
+  },
+  {
+    "cardTitle": "4 Card title",
+    "cardSubtile": "4 Card subtitle",
+    "cardDes": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem vero placeat autem ab reiciendis iusto dolores libero repellendus nam",
+    "cardImage": "https://www.vanquis.com/wp-content/uploads/2025/12/VanquisCards_Midnight-2.webp",
+    "address": {
+      "street": "kuril-kuratoli-shikdarbari",
+      "home": "ka/168"
+    },
+    "phones": [
+      {
+        "home": "01738920277"
+      },
+      {
+        "office": "029999999"
+      }
+    ]
+  }
+]
