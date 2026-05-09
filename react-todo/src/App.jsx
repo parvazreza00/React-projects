@@ -1,7 +1,8 @@
 import react from 'react'
 import './App.css'
 
-import Home from './components/Todos/Home'
+// import Home from './components/Todos/Home'
+import Home from './components/TodoApp/Home'
 
 function App() {
   
