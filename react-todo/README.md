@@ -1,4 +1,4 @@
-# netlyfy deployed link todo app demo: https://mellifluous-mandazi-f1e0e7.netlify.app/
+# netlyfy deployed link todo app demo: https://preeminent-tapioca-90620d.netlify.app/
 
 # React Todo app
 - Here we have leared about useState()
