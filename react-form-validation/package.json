@@ -13,7 +13,8 @@
     "bootstrap": "^5.3.8",
     "formik": "^2.4.9",
     "react": "^19.2.5",
-    "react-dom": "^19.2.5"
+    "react-dom": "^19.2.5",
+    "react-hooks-yup-form": "^0.1.5"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
