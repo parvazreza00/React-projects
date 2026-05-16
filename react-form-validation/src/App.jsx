@@ -9,6 +9,7 @@ import Faqs_2 from './Components/FAQ_2/Faqs'
 import UseEffectExample from './Components/Hooks/UseEffect/UseEffectExample'
 import DataFetch from './Components/Hooks/UseEffect/DataFetch'
 import FetchData_2 from './Components/Hooks/UseEffect/FetchData_2'
+import CustomHookDataFetch from './Components/Hooks/CustomHooks/DataFetch'
 
 function App() {
 
@@ -21,7 +22,8 @@ function App() {
     {/* <Faqs_2 /> */}
     {/* <UseEffectExample/> */}
     {/* <DataFetch /> */}
-    <FetchData_2/>
+    {/* <FetchData_2/> */}
+    <CustomHookDataFetch />
    </div>
   )
 }
