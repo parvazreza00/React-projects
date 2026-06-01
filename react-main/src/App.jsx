@@ -3,6 +3,7 @@ import UseReff from './components/Hooks/useRef/UseReff'
 import UseReducer from './components/Hooks/useReducer/UseReducer'
 import Counter from './components/Hooks/useReducer/Counter'
 import ComplexCounter from './components/Hooks/useReducer/ComplexCounter'
+import Component1 from './components/propsDrilling/Component1'
 
 function App() {
 
@@ -12,7 +13,8 @@ function App() {
 
     {/* <UseReducer/> */}
     {/* <Counter/> */}
-    <ComplexCounter/>
+    {/* <ComplexCounter/> */}
+    <Component1/>
      
     </>
   )
