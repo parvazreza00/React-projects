@@ -2,12 +2,10 @@ import React from "react";
 import { useUsersCrudContext } from "./Hooks/useUsersCrudContext";
 
 const User = ({ user }) => {
-  const {users, setUsers} = useUsersCrudContext();
+  const {deleteUser} = useUsersCrudContext();
   
   const handleDelete = (id) => {
-    console.log(id);
-    const filterUsers = users.filter((user) => user.id != id);
-    setUsers(filterUsers);
+    deleteUser(id);
   };
   return (
     <div className="col-md-6">

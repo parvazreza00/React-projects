@@ -3,11 +3,12 @@ import React from "react";
 import { useUsersContext } from "../Hooks/useUsersContext";
 
 const User = ({ user }) => {
-  const { users, setUsers } = useUsersContext();
+ 
+   const { deleteUser} = useUsersContext();
 
-  const handleDelete = (id) => {
-    const filterUsers = users.filter((user) => user.id != id);
-    setUsers(filterUsers);
+  const handleDelete = (id) => {  
+
+    deleteUser(id);
   };
 
   return (

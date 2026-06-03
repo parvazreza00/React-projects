@@ -3,7 +3,7 @@ import { useUsersContext } from "../Hooks/useUsersContext";
 
 const NewUser = () => {
 
-  const {setUsers} = useUsersContext()
+  const { addUser } = useUsersContext();
   const [newuser, setNewuser] = useState("");
 
   const handleChange = (event) => {
@@ -16,8 +16,7 @@ const NewUser = () => {
       id: new Date().getTime().toString(),
       username: newuser,
     };
-
-    setUsers((prevUser) => [...prevUser, addednewuser]);
+    addUser(addednewuser);
 
     setNewuser("");
   };
