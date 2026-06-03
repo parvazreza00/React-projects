@@ -1,9 +1,9 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import User from './User'
-import { CrudUsersContext } from './ContextAPI/UsersContext'
+import { useUsersCrudContext } from './Hooks/useUsersCrudContext';
 
 const Users = () => {
-    const {users} = useContext(CrudUsersContext);
+    const {users} = useUsersCrudContext();
   return (
     <div className='container mt-3'>
       <div className="row g-3">

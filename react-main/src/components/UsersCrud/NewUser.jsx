@@ -1,8 +1,9 @@
-import React, { useContext, useState } from "react";
-import { CrudUsersContext } from "./ContextAPI/UsersContext";
+import React, { useState } from "react";
+
+import { useUsersCrudContext } from "./Hooks/useUsersCrudContext";
 
 const NewUser = () => {
-    const {setUsers} = useContext(CrudUsersContext);
+    const {setUsers} = useUsersCrudContext();
     
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");

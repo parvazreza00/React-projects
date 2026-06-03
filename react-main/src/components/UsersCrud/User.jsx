@@ -1,8 +1,9 @@
-import React, { useContext } from "react";
-import { CrudUsersContext } from "./ContextAPI/UsersContext";
+import React from "react";
+import { useUsersCrudContext } from "./Hooks/useUsersCrudContext";
 
 const User = ({ user }) => {
-  const { users, setUsers } = useContext(CrudUsersContext);
+  const {users, setUsers} = useUsersCrudContext();
+  
   const handleDelete = (id) => {
     console.log(id);
     const filterUsers = users.filter((user) => user.id != id);
