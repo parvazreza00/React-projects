@@ -9,7 +9,18 @@ import Users from "./components/Users/Users";
 import NewUser from "./components/Users/NewUser";
 import UserProvider from "./components/Users/ContextApi/UsersContext";
 
+
+import UsersCrud from "./components/UsersCrud/Users";
+import { CrudUsersContext } from "./components/UsersCrud/ContextAPI/UsersContext";
+import CrudAddNewUser from "./components/UsersCrud/NewUser";
+
 function App() {
+
+  const [users, setUsers] = useState([
+    { id: 1, name: "John Doe",  email: "john.doe@example.com" },
+    { id: 2, name: "Jane Smith", email: "jane.smith@example.com" },
+    { id: 3, name: "Bob Johnson", email: "bob.johnson@example.com" },
+  ]);
 
   return (
     <>
@@ -20,10 +31,16 @@ function App() {
       {/* <ComplexCounter/> */}
       {/* <Component1/> */}
 
-      <UserProvider>
+      {/* <UserProvider>
         <NewUser />
         <Users />
-      </UserProvider>
+      </UserProvider> */}
+
+      <CrudUsersContext.Provider value={{ users, setUsers }}>
+        <CrudAddNewUser/>
+        <UsersCrud />
+      </CrudUsersContext.Provider>
+
     </>
   );
 }
