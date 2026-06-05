@@ -26,4 +26,7 @@ If you are developing a production application, we recommend using TypeScript wi
 - handling invalid path
 - Navbar setting and design
 - most important use <Outlate /> from react-router
+- useNavigate() hook for navigation 
+- programmable routing
+- data passinag by the route to page and receive on the page (passing by "state"=> property and receive by the useLocation() hook)
 

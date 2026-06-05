@@ -11,6 +11,8 @@ import Contact from "./components/pages/Contact";
 import Products from "./components/pages/Products";
 import NotFound from "./components/NotFound";
 import Navbar from "./components/layout/Navbar";
+import SingIn from "./components/pages/SingIn";
+import Porfile from "./components/pages/Porfile";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +34,14 @@ const router = createBrowserRouter([
       {
         path: "/products",
         element: <Products />,
+      },
+      {
+        path: "/signin",
+        element: <SingIn />,
+      },
+      {
+        path: "/profile",
+        element: <Porfile />,
       },
     ],
   },
