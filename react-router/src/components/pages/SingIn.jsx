@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
+import { ToastContainer,toast } from 'react-toastify';
 
 const SingIn = () => {
   const [email, setEmail] = useState("");
@@ -18,15 +19,22 @@ const SingIn = () => {
     event.preventDefault();
 
     if (email == "parvaz@gmail.com" && password == "123456") {
-        const user = {
-            name: "Md. Parvaz",
-            email: "parvaz@gmail.com",
-            phone: "01738920277",
-            profession: "Software Eng.",
-        };
-      navigate("/profile", {state: user});
+      const user = {
+        name: "Md. Parvaz",
+        email: "parvaz@gmail.com",
+        phone: "01738920277",
+        profession: "Software Eng.",
+        admin: false,
+      };
+      localStorage.setItem("userData", JSON.stringify({user, isSignIn:true}));
+       toast.success("Signed In Successfully!");
+      const path = user.admin ? '/dashboard/admin/profile' : '/dashboard/user/profile';
+      navigate(path);
+      window.location.reload();
     } else {
-      navigate("/");
+      toast.error("Crediantials does not match!");
+      navigate("/signin");
+     
     }
   };
   return (
@@ -61,6 +69,7 @@ const SingIn = () => {
           </div>
         </div>
       </form>
+      <ToastContainer />
     </div>
   );
 };

@@ -1,0 +1,26 @@
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card img {
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.03);
+}
+
+.btn {
+  min-height: 45px;
+}
+
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 1.4rem;
+  }
+
+  .card img {
+    max-height: 300px;
+  }
+}

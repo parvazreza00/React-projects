@@ -29,4 +29,10 @@ If you are developing a production application, we recommend using TypeScript wi
 - useNavigate() hook for navigation 
 - programmable routing
 - data passinag by the route to page and receive on the page (passing by "state"=> property and receive by the useLocation() hook)
+- useParams() hook for uses for catching url parameter API calling
+- useRouteError() hook uses for mismatch url searching and error page show
+- route protect/ url protected
+- user signin/signout
+- localStorage()
+- react-tostify
 

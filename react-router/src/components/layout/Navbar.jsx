@@ -1,7 +1,21 @@
-import React from 'react'
-import { Link, Outlet } from 'react-router'
+import React, { useEffect, useState } from "react";
+import { Link, Outlet } from "react-router";
+import { ToastContainer, toast } from "react-toastify";
 
 const Navbar = () => {
+  const [isSignIn, setIsSignIn] = useState(() => {
+    const data = JSON.parse(localStorage.getItem("userData"));
+    return data?.isSignIn || false;
+  });
+
+  const handleSignOut = () => {
+    localStorage.setItem(
+      "userData",
+      JSON.stringify({ user: null, isSignIn: false }),
+    );
+    setIsSignIn(false);    
+  };
+
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -38,28 +52,34 @@ const Navbar = () => {
                   Contact
                 </Link>
               </li>
-
-              <li className="nav-item">
-                <Link className="nav-link" to="products">
-                  Products
-                </Link>
-              </li>
-
-              <li className="nav-item">
-                <Link className="nav-link" to="signin">
-                  SingIn
-                </Link>
-              </li>
+              {isSignIn ? (
+                <li className="nav-item">
+                  <Link
+                    className="nav-link"
+                    to="signout"
+                    onClick={handleSignOut}
+                  >
+                    Singout
+                  </Link>
+                </li>
+              ) : (
+                <li className="nav-item">
+                  <Link className="nav-link" to="signin">
+                    SingIn
+                  </Link>
+                </li>
+              )}
             </ul>
           </div>
         </div>
       </nav>
 
       <div className="container mt-4">
+        {/* <ToastContainer/> */}
         <Outlet />
       </div>
     </>
   );
 };
 
-export default Navbar
+export default Navbar;
