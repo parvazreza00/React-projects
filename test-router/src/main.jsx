@@ -12,6 +12,12 @@ import SignIn from "./components/pages/SignIn";
 import NotFoundPage from "./components/pages/NotFoundPage";
 import Navbar from "./components/layout/Navbar";
 import ProductDetails from "./components/pages/ProductDetails";
+import UserProfile from "./components/pages/users/UserProfile";
+import UserProtectRouter from "./router/UserProtectRouter";
+import UserOrder from "./components/pages/users/UserOrder";
+import Profile from "./components/pages/admin/Profile";
+import UserManage from "./components/pages/admin/UserManage";
+import AdminUserProtectRouter from "./router/AdminUserProtectRouter";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +44,37 @@ const router = createBrowserRouter([
         path: "/signin",
         element: <SignIn />,
       },
+
+      {
+        path: "/dashboar/user",
+        element: <UserProtectRouter />,
+        children: [
+          {
+            path: "profile",
+            element: <UserProfile />,
+          },
+          {
+            path: "orders",
+            element: <UserOrder />,
+          },
+        ],
+      },
+
+       {
+        path: "/dashboar/admin",
+        element: <AdminUserProtectRouter />,
+        children: [
+          {
+            path: "profile",
+            element: <Profile />,
+          },
+          {
+            path: "manage-user",
+            element: <UserManage />,
+          },
+        ],
+      },
+
     ],
   },
 

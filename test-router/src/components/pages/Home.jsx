@@ -84,7 +84,7 @@ const Home = () => {
                     </p>
 
                     <div className="d-grid">
-                      <Link to={`/products/${id}`} state={product} className="btn btn-primary">
+                      <Link to={`/products/${id}`} className="btn btn-primary">
                         View Details
                       </Link>
                     </div>

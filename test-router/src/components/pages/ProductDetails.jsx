@@ -1,22 +1,58 @@
-import React from "react";
-import { useLocation, Link } from "react-router";
-import './product_details.css'
+import React, { useEffect, useState } from "react";
+import { useLocation, Link, useParams } from "react-router";
+import "./product_details.css";
 
 const ProductDetails = () => {
-  const { state } = useLocation();
-  console.log(state)
+  // const { state } = useLocation();
+  // console.log(state)
+  const { id } = useParams();
+  const [product, setProduct] = useState({});
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    setIsLoading(true);
+
+    fetch(`https://dummyjson.com/products/${id}`)
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error("Data fetching Failed!");
+        }
+        return res.json();
+      })
+      .then((data) => {        
+        setProduct(data);
+      })
+      .catch((error) => {
+        setError(error.message);
+      })
+      .finally(() => {
+        setIsLoading(false);
+      });
+  }, [id]);
 
   return (
     <div className="container py-3 py-md-5">
-      <h3 className="text-center mb-4">Product Details</h3>
-      {state && (
+      <h1 className="text-center mb-4">Product Details</h1>
+
+      {isLoading && (
+        <div className="text-center">
+          <div className="spinner-border" role="status">
+            <span className="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      )}
+
+      {error && <div className="alert alert-danger text-center">{error}</div>}
+
+      {!error && !isLoading && product?.id && (
         <div className="card shadow-lg border-0">
           <div className="row g-0">
             {/* Product Image */}
             <div className="col-12 col-md-5">
               <img
-                src={state.thumbnail}
-                alt={state.title}
+                src={product.thumbnail}
+                alt={product.title}
                 className="img-fluid w-100"
                 style={{
                   maxHeight: "500px",
@@ -30,15 +66,15 @@ const ProductDetails = () => {
               <div className="card-body p-3 p-md-4">
                 {/* Title & Stock */}
                 <div className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-2">
-                  <h2 className="card-title mb-0">{state.title}</h2>
+                  <h2 className="card-title mb-0">{product.title}</h2>
 
                   <span
                     className={`badge ${
-                      state.stock > 0 ? "bg-success" : "bg-danger"
+                      product.stock > 0 ? "bg-success" : "bg-danger"
                     }`}
                   >
-                    {state.stock > 0
-                      ? `${state.stock} In Stock`
+                    {product.stock > 0
+                      ? `${product.stock} In Stock`
                       : "Out of Stock"}
                   </span>
                 </div>
@@ -48,19 +84,19 @@ const ProductDetails = () => {
                 <div className="row">
                   <div className="col-sm-6">
                     <p>
-                      <strong>Brand:</strong> {state.brand}
+                      <strong>Brand:</strong> {product.brand}
                     </p>
                   </div>
 
                   <div className="col-sm-6">
                     <p>
-                      <strong>Category:</strong> {state.category}
+                      <strong>Category:</strong> {product.category}
                     </p>
                   </div>
 
                   <div className="col-sm-6">
                     <p>
-                      <strong>SKU:</strong> {state.sku}
+                      <strong>SKU:</strong> {product.sku}
                     </p>
                   </div>
 
@@ -68,17 +104,17 @@ const ProductDetails = () => {
                     <p>
                       <strong>Rating:</strong>
                       <span className="text-warning ms-2">
-                        ⭐ {state.rating}
+                        ⭐ {product.rating}
                       </span>
                     </p>
                   </div>
                 </div>
 
-                <h3 className="text-success fw-bold my-3">${state.price}</h3>
+                <h3 className="text-success fw-bold my-3">${product.price}</h3>
 
                 <div className="mb-4">
                   <h5>Description</h5>
-                  <p className="text-muted">{state.description}</p>
+                  <p className="text-muted">{product.description}</p>
                 </div>
 
                 {/* Buttons */}

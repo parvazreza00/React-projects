@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, Outlet } from "react-router";
 
 const Navbar = () => {
+  const [isSignIn, setIsSignIn] = useState(() => {
+    const data = JSON.parse(localStorage.getItem("userData"));
+    return data?.isSignIn || false;
+  });
+
+  const handleLogOut = () => {
+    localStorage.setItem("userData", JSON.stringify({user:null, isSignIn:false}));
+    setIsSignIn(false);
+  }
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -24,7 +33,6 @@ const Navbar = () => {
           {/* Menu */}
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
-
               <li className="nav-item">
                 <Link className="nav-link" to="/">
                   Home
@@ -42,13 +50,20 @@ const Navbar = () => {
                   Contacts
                 </Link>
               </li>
-
-              <li className="nav-item">
-                <Link className="nav-link" to="signin">
-                  Sign In
-                </Link>
-              </li>
-
+              {isSignIn && (
+                <li className="nav-item">
+                  <Link className="nav-link" to="signin" onClick={handleLogOut}>
+                    Sign Out
+                  </Link>
+                </li>
+              )}
+              {!isSignIn && (
+                <li className="nav-item">
+                  <Link className="nav-link" to="signin">
+                    Sign In
+                  </Link>
+                </li>
+              )}
             </ul>
           </div>
         </div>
