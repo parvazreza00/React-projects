@@ -18,11 +18,11 @@ const SingIn = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    if (email == "parvaz@gmail.com" && password == "123456") {
+    if (email == "abc@gmail.com" && password == "123456") {
       const user = {
-        name: "Md. Parvaz",
-        email: "parvaz@gmail.com",
-        phone: "01738920277",
+        name: "ABC",
+        email: "abc@gmail.com",
+        phone: "01730000000",
         profession: "Software Eng.",
         admin: false,
       };
@@ -48,7 +48,7 @@ const SingIn = () => {
               className="form-control"
               name="email"
               value={email}
-              placeholder="Email"
+              placeholder="abc@gmail.com"
               onChange={handleEmail}
             />
           </div>
@@ -58,7 +58,7 @@ const SingIn = () => {
               className="form-control"
               name="password"
               value={password}
-              placeholder="Password"
+              placeholder="123456"
               onChange={handlePassword}
             />
           </div>
