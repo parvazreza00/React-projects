@@ -3,7 +3,7 @@ import { Card,Button, Badge } from "react-bootstrap";
 
 const MenuItems = (props) => {
     const {dish} = props;
-//   console.log(props);
+  console.log(dish);
   return (
     <div>
        <Card
@@ -19,8 +19,8 @@ const MenuItems = (props) => {
 
         {dish.label && (
           <Badge
-            bg="danger"
-            className="position-absolute top-0 end-0 m-3 px-2 py-1"
+            bg="danger" pill
+            className="position-absolute top-0 start-0 m-3 px-2 fs-6 text-white"
           >
             {dish.label}
           </Badge>
@@ -28,7 +28,7 @@ const MenuItems = (props) => {
       </div>
 
       <Card.Body className="d-flex flex-column">
-        <Card.Title className="fw-bold fs-4">
+        <Card.Title className="fw-bold fs-4" style={{ cursor:"pointer" }} onClick={()=> dish.DishSelect(dish.dish)}>
           {dish.name}
         </Card.Title>
 
@@ -41,7 +41,7 @@ const MenuItems = (props) => {
             <span className="fw-bolder">&#2547;</span> {dish.price}
           </h4>
 
-          <Badge bg="dark" pill className="p-1">
+          <Badge bg="danger" pill className="px-2 fs-6 text-white">
             {dish.category}
           </Badge>
         </div>

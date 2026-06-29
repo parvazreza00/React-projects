@@ -5,14 +5,26 @@ import MenuItems from "./MenuItems";
 export class Menu extends Component {
   state = {
     dishes: DISHES,
+    selectedDish: null,
   };
 
+  onDishSelected = (dish) => {
+    console.log(dish);
+    this.setState({selectedDish:dish})
+  }; 
+
+
   render() {
-    const menu = this.state.dishes.map(item => {
-        return(
-            <MenuItems dish={item} key={item.id}/>
-        )
-    })
+    const menu = this.state.dishes.map((item) => {
+      return <MenuItems dish={item} key={item.id} DishSelect={this.onDishSelected}/>;
+    });
+
+    let dishDetails = null;
+    if(this.state.selectedDish != null){
+      dishDetails = <DishDetails dish={this.state.selectedDish}/>
+
+    }
+
     return (
       <div className="container">
         <div className="row">
@@ -20,7 +32,7 @@ export class Menu extends Component {
             <h1>{menu}</h1>
           </div>
           <div className="col-6">
-            <h1>Second column</h1>
+            <h1>{dishDetails}</h1>
           </div>
         </div>
       </div>
