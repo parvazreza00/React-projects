@@ -5,12 +5,17 @@ import MenuItems from "./MenuItems";
 export class Menu extends Component {
   state = {
     dishes: DISHES,
+    selectedDish = null,
   };
+
+  onDishSelect = (dish) => {
+    this.setState({selectedDish:dish});
+  }
 
   render() {
     const menu = this.state.dishes.map(item => {
         return(
-            <MenuItems dish={item} key={item.id}/>
+            <MenuItems dish={item} key={item.id} DishSelect={this.onDishSelect}/>
         )
     })
     return (

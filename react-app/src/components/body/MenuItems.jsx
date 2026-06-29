@@ -28,7 +28,7 @@ const MenuItems = (props) => {
       </div>
 
       <Card.Body className="d-flex flex-column">
-        <Card.Title className="fw-bold fs-4">
+        <Card.Title className="fw-bold fs-4" onClick={()=> dish.DishSelect(dish.dish)}>
           {dish.name}
         </Card.Title>
 
