@@ -19,9 +19,16 @@ const DISHES = [
       {
         id: 1,
         rating: 4,
-        comment: "Very creamy and fresh.",
+        comment: "Very creamy and fresh. You should everyone to go to enjoy the dishes.",
         author: "Rahim",
         date: "2026-06-28T14:30:10.556094Z",
+      },
+      {
+        id: 2,
+        rating: 3,
+        comment: "Very You should everyone to go to enjoy the dishes.",
+        author: "Raihan",
+        date: "2026-07-28T14:30:10.556094Z",
       },
     ],
   },

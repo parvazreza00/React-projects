@@ -1,14 +1,14 @@
 import React from "react";
 import { Card, Button, Badge } from "react-bootstrap";
+import DishComments from "./DishComments";
 
-const MenuItems = (props) => {
-  const { dish, DishSelect } = props;
-  // console.log(props.DishSelect);
+const DishDetails = (props) => {
+  const {dish} = props;
   return (
     <div>
       <Card
         className="mt-4 shadow-lg border-0 rounded-4 overflow-hidden h-100 card-hover"
-        style={{ width: "22rem" }}
+        style={{ width: "30rem" }}
       >
         <div className="position-relative">
           <Card.Img
@@ -50,14 +50,15 @@ const MenuItems = (props) => {
               {dish.category}
             </Badge>
           </div>
-
-          <Button variant="warning" className="mt-4 fw-semibold rounded-pill">
-            Order Now
-          </Button>
+          <hr />
+          
+        <DishComments comments={dish.comments}/>
         </Card.Body>
+        
+        
       </Card>
     </div>
   );
 };
 
-export default MenuItems;
+export default DishDetails;
