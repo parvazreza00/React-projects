@@ -9,6 +9,16 @@
 .iconImage:hover {
     transform: scale(1.1);
 }
+.phoneIconImage{
+     width: 40px;
+    height: 30px;
+    display: block;
+    margin: auto;
+    transition: all 0.3s ease;
+}
+.phoneIconImage:hover {
+    transform: scale(1.1);
+}
 
 .activeBtn {
     background-color: #0d6efd;
