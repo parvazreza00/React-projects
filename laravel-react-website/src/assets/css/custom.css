@@ -80,3 +80,13 @@ body{
     margin: -1.9rem auto 0;
     margin-bottom: 1rem;
 }
+.navTitle{
+    color: #fff !important;
+    font-weight: 700;
+    font-size: 40px;   
+}
+.navTitleScroll{
+    color: #92a9c4 !important;
+    font-weight: 700;
+    font-size: 40px;   
+}
