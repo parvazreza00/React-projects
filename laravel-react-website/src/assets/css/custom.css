@@ -1,0 +1,31 @@
+body{
+    font-family: 'Raleway', sans-serif;
+}
+.topFixBanner{
+    background-image: url("../images/banner.jpg");
+    min-height: 550px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.topBannerOverlay{
+    position: absolute;
+    min-height: 550px;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+.topContent{
+    margin-top: 10em;
+}
+.topTitle{   
+    font-weight: 700;
+    color: #fff;
+    font-size: 48px;
+}
+.topSubTitle{
+    font-weight: 600;
+    color: #fff;
+    font-size: 22px;
+}
