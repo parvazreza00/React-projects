@@ -1,19 +1,28 @@
 import React, { Component } from "react";
 import { Container, Navbar, Nav } from "react-bootstrap";
 
+import "../../assets/css/custom.css";
+
+import blackLogo from '../../assets/images/black-logo.jpg'
+import whiteLogo from '../../assets/images/white-logo.jpg'
+
 export class TopNavigation extends Component {
   constructor() {
     super();
     this.state = {
       navBarTitle: "navTitle",
+      navBarLogo: [whiteLogo],
+      navBarBackground: "navBackground",
+      navBarItem: "navItem"
+
     };
   }
 
   onScroll = () => {
     if (window.scrollY > 100) {
-      this.setState({ navBarTitle: "navTitleScroll" });
+      this.setState({ navBarTitle: "navTitleScroll", navBarLogo:[blackLogo], navBarBackground:"navBackgroundScroll", navBarItem:"navItemScroll" });
     } else if (window.scrollY < 100) {
-      this.setState({ navBarTitle: "navTitle" });
+      this.setState({ navBarTitle: "navTitle", navBarLogo:[whiteLogo], navBarBackground:"navBackground",  navBarItem:"navItem" });
     }
   };
 
@@ -24,27 +33,26 @@ export class TopNavigation extends Component {
   render() {
     return (
       <div>
-        <Navbar
+        <Navbar 
           expand="lg"
           fixed="top"
-          className="bg-body-tertiary"
-          bg="dark"
+          className={this.state.navBarBackground}          
           data-bs-theme="dark"
         >
           <Container>
             <Navbar.Brand href="#home" className={this.state.navBarTitle}>
-              Laravel-React Website
+              <img src={this.state.navBarLogo} alt="" className="navBarLogo"/>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto"></Nav>
               <Nav>
-                <Nav.Link href="#link">Home</Nav.Link>
-                <Nav.Link href="#link">About</Nav.Link>
-                <Nav.Link href="#link">Service</Nav.Link>
-                <Nav.Link href="#link">Courses</Nav.Link>
-                <Nav.Link href="#link">Portfolio</Nav.Link>
-                <Nav.Link href="#link">Contact Us</Nav.Link>
+                <Nav.Link href="#link" className={this.state.navBarItem}>Home</Nav.Link>
+                <Nav.Link href="#link" className={this.state.navBarItem}>About</Nav.Link>
+                <Nav.Link href="#link"  className={this.state.navBarItem}>Service</Nav.Link>
+                <Nav.Link href="#link"  className={this.state.navBarItem}>Courses</Nav.Link>
+                <Nav.Link href="#link"  className={this.state.navBarItem}>Portfolio</Nav.Link>
+                <Nav.Link href="#link"  className={this.state.navBarItem}>Contact Us</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>

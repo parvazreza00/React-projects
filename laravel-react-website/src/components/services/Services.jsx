@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-import "../../assets/css/custom.css";
 
 import designIcon from "../../assets/images/design.png";
 import ecommerceIcon from "../../assets/images/ecommerce.png";
