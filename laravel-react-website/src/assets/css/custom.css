@@ -121,3 +121,16 @@ body {
     font-weight: 700;
     font-size: 16px;
 }
+.analysisMainTitle {
+  color: #313131;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  font-size: 28px;
+  font-weight: 700;
+}
+.analysisDescription {
+  color: #313131;
+  margin-top: 1rem;
+  font-size: 15px;
+  font-weight: 400;
+}
