@@ -134,3 +134,51 @@ body {
   font-size: 15px;
   font-weight: 400;
 }
+.summeryBanner {
+  background-image: url("../images/summary.jpg");
+  min-height: 550px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.summeryOverlay {
+  position: absolute;
+  min-height: 550px;
+  width: 100%;
+  background-color: rgba(120, 97, 202, 0.5);
+}
+.counterNumber{
+  color:#fff;
+  font-size: 40px;
+  font-weight: 700;
+}
+.counterTitle{
+  color:#d6da24;
+  font-size: 22px;
+  font-weight: 600;
+}
+.HRBar{
+   width: 80px;
+    height: 4px;
+    background-color: #0d6efd;
+    border: none;
+    border-radius: 10px;
+    margin: 15px auto;
+    opacity: 1;
+}
+.counterSection{
+  margin-top: 10% !important;
+}
+.cardTitle{
+  color:#051b35;
+  font-size: 15px;
+  font-weight: 700;
+}
+.cardSubTitle{
+  text-align: justify;
+  color:#051b35;
+  font-size: 14px;
+  font-weight: 600;
+}

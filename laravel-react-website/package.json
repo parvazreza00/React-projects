@@ -10,11 +10,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^7.3.0",
+    "@fortawesome/free-regular-svg-icons": "^7.3.0",
+    "@fortawesome/free-solid-svg-icons": "^7.3.0",
+    "@fortawesome/react-fontawesome": "^3.4.0",
     "bootstrap": "^5.3.8",
     "react": "^19.2.7",
     "react-bootstrap": "^2.10.10",
+    "react-countup": "^6.5.3",
     "react-dom": "^19.2.7",
     "react-router": "^7.18.1",
+    "react-visibility-sensor": "^5.1.1",
     "recharts": "^3.9.2"
   },
   "devDependencies": {

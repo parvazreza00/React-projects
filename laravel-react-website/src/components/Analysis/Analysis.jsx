@@ -42,7 +42,7 @@ export class Analysis extends Component {
     return (
       <Fragment>
         <Container className="text-center mb-5">
-          <h1 className="analysisMainTitle">My Analysis</h1>
+          <h1 className="analysisMainTitle">Technology Used</h1>
           <div className="bottomBar"></div>
           <Row>
             <Col lg={6} md={12} sm={12}>
