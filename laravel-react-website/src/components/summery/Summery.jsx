@@ -2,8 +2,10 @@ import React, { Component } from "react";
 import { Container, Row, Col, Button, Card } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck, faGlobe, faLaptop, faStar } from '@fortawesome/free-solid-svg-icons'
+import { CountUp } from "react-countup";
 
 export class Summery extends Component {
+
   render() {
     return (
       <div className="summeryBanner p-0">
@@ -14,7 +16,14 @@ export class Summery extends Component {
                 <Row>
                   <Col lg={4} md={6} sm={12}>
                   <FontAwesomeIcon icon={faGlobe} className="text-white fs-4"/>
-                    <h1 className="counterNumber">35000</h1>
+                   <h1 className="counterNumber">100000</h1>
+                   {/* <h1 className="counterNumber">
+  <CountUp
+    start={0}
+    end={100000}
+    duration={3}
+  />
+</h1> */}
                     <h4 className="counterTitle">Students Worldwide</h4>
                     <hr className="HRBar" />
                   </Col>
