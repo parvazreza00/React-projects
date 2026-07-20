@@ -49,13 +49,13 @@ export class Summery extends Component {
                       
                       <Card.Body>
                         <Card.Title className="cardTitle">What I have Archived</Card.Title>
-                        <Card.Text>
+                        <div>
                           <p className="cardSubTitle"><FontAwesomeIcon icon={faCheck} className="border border-2" style={{ fontSize:"12px" }}/> Requirement Gathering</p>
                           <p className="cardSubTitle"><FontAwesomeIcon icon={faCheck} className="border border-2" style={{ fontSize:"12px" }}/> System Analysis</p>
                           <p className="cardSubTitle"><FontAwesomeIcon icon={faCheck} className="border border-2" style={{ fontSize:"12px" }}/> Coding Testing</p>                        
                           <p className="cardSubTitle"><FontAwesomeIcon icon={faCheck} className="border border-2" style={{ fontSize:"12px" }}/> Implementation</p>                        
                                                   
-                        </Card.Text>                       
+                        </div>                       
                       </Card.Body>
                     </Card>
                   </Col>

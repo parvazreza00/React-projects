@@ -109,17 +109,17 @@ body {
   transition: background-color 400ms linear;
   background-color: #fff;
 }
-.navItem{
-    text-decoration: none !important;
-    color: #fff !important;
-    font-weight: 700;
-    font-size: 16px;
+.navItem {
+  text-decoration: none !important;
+  color: #fff !important;
+  font-weight: 700;
+  font-size: 16px;
 }
-.navItemScroll{
-    text-decoration: none !important;
-    color: black !important;
-    font-weight: 700;
-    font-size: 16px;
+.navItemScroll {
+  text-decoration: none !important;
+  color: black !important;
+  font-weight: 700;
+  font-size: 16px;
 }
 .analysisMainTitle {
   color: #313131;
@@ -149,40 +149,40 @@ body {
   width: 100%;
   background-color: rgba(120, 97, 202, 0.5);
 }
-.counterNumber{
-  color:#fff;
+.counterNumber {
+  color: #fff;
   font-size: 40px;
   font-weight: 700;
 }
-.counterTitle{
-  color:#d6da24;
+.counterTitle {
+  color: #d6da24;
   font-size: 22px;
   font-weight: 600;
 }
-.HRBar{
-   width: 80px;
-    height: 4px;
-    background-color: #0d6efd;
-    border: none;
-    border-radius: 10px;
-    margin: 15px auto;
-    opacity: 1;
+.HRBar {
+  width: 80px;
+  height: 4px;
+  background-color: #0d6efd;
+  border: none;
+  border-radius: 10px;
+  margin: 15px auto;
+  opacity: 1;
 }
-.counterSection{
+.counterSection {
   margin-top: 10% !important;
 }
-.cardTitle{
-  color:#051b35;
+.cardTitle {
+  color: #051b35;
   font-size: 15px;
   font-weight: 700;
 }
-.cardSubTitle{
+.cardSubTitle {
   text-align: justify;
-  color:#051b35;
+  color: #051b35;
   font-size: 14px;
   font-weight: 600;
 }
-.myRecentProjectHeadline{
+.myRecentProjectHeadline {
   color: #313131;
   margin-top: 5rem;
   margin-bottom: 3rem;
@@ -201,7 +201,7 @@ body {
   font-size: 15px;
   font-weight: 400;
 }
-.recentProjectCard{
+.recentProjectCard {
   background-color: #fff;
   width: 22em;
   border-radius: 0.6em;
@@ -210,18 +210,18 @@ body {
   box-shadow: 6px 13px 25px -5px;
   transition: all ease 200ms;
 }
-.recentProjectCard:hover{
- transform: scale(1.03);
+.recentProjectCard:hover {
+  transform: scale(1.03);
   box-shadow: 0px 13px 30px -5px;
 }
-.myCoursesHeadline{
-   color: #313131;
+.myCoursesHeadline {
+  color: #313131;
   margin-top: 5rem;
   margin-bottom: 3rem;
   font-size: 28px;
   font-weight: 700;
 }
-.courseImage{
+.courseImage {
   width: 100%;
   border-radius: 0.6em;
 }
@@ -236,12 +236,71 @@ body {
   margin-top: 1rem;
   font-size: 15px;
   font-weight: 400;
-  text-align: justify ;
+  text-align: justify;
 }
-.courseViewMore{
+.courseViewMore {
   color: #0a65d4;
   font-weight: 600;
   font-size: 15px;
   text-decoration: none;
   float: left;
+}
+.videoTitle {
+  color: #313131;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  font-size: 28px;
+  font-weight: 700;
+}
+.videoDescription {
+  color: #313131;
+  margin-top: 1rem;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: justify;
+}
+.videoCard {
+  box-shadow: 0px 13px 30px -5px;
+  padding: 8em 3em 8em 3em;
+  background-color: #313131;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+.sideBack {
+  background-color: #313131 !important;
+  height: 400px;
+}
+.clientReviewHeadline {
+  color: #313131;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  font-size: 28px;
+  font-weight: 700;
+  padding:20px 0px;
+}
+.clientReviewbottomBar {
+  background-color: #164d91;
+  height: 3px;
+  width: 100px;
+  margin: -3rem auto 0;
+  margin-bottom: 1rem;
+}
+.clientImage{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 1px solid #fff;
+}
+.clientName {
+  color: #fff;
+  margin-top: 1rem;
+  font-size: 24px;
+  font-weight: 700;
+}
+.clientReviewDescription {
+  color: #fff;
+  margin-top: 1rem;
+  font-size: 15px;
+  font-weight: 400;
 }

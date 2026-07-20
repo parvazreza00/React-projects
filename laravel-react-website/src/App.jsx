@@ -6,6 +6,8 @@ import Analysis from './components/Analysis/Analysis'
 import Summery from './components/summery/Summery'
 import RecentProject from './components/RecentProject/RecentProject'
 import Courses from './components/Courses/Courses'
+import Videos from './components/Video/Videos'
+import ClientReview from './components/ClientReview/ClientReview'
 
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
     <Summery/>
     <RecentProject/>
     <Courses/>
+    <Videos/>
+    <ClientReview/>
     
 
    </div>
