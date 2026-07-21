@@ -345,3 +345,41 @@ body {
   font-weight: 600;
   font-size: 24px;
 }
+.footerSection{
+  margin-top: 5em;
+  box-shadow: 0px 8px 0px 0px;
+  background-color: #051b35;
+}
+.footerName{
+  color:#fff;
+  margin-top: 1rem;
+  font-size: 22px;
+  font-weight: 600;
+}
+.socialContainer{
+  margin-top: 30px;
+}
+a.social{
+  margin: 0 1em;
+  transition: transform 240ms;
+  display: inline-block;
+}
+a.social:hover{
+  transform: translateY(-2px);
+}
+a.facebook{
+  color: #fff;
+}
+a.youtube{
+  color: #fff;
+}
+a.twitter{
+  color: #fff;
+}
+.footerDescription{
+  color:#fff;
+  margin-top: 1em;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: justify;
+}

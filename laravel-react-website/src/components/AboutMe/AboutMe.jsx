@@ -6,18 +6,22 @@ import { init } from "ityped";
 export class AboutMe extends Component {
   typedElement = React.createRef();
   componentDidMount() {
-    init(this.typedElement.current, {
-      showCursor: false,
-      strings: [
-        "Laravel Developer",
-        "React Developer",
-        "Vue.js Developer",
-        "Full Stack Developer",
-      ],
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 1500,
-    });
+    if (this.typedElement.current) {
+      this.typedElement.current.innerHTML = "";
+
+      init(this.typedElement.current, {
+        showCursor: false,
+        strings: [
+          "Laravel Developer",
+          "React Developer",
+          "Vue.js Developer",
+          "Full Stack Developer",
+        ],
+        typeSpeed: 100,
+        backSpeed: 50,
+        backDelay: 1500,
+      });
+    }
   }
 
   render() {
