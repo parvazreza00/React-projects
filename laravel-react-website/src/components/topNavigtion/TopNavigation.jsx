@@ -12,6 +12,7 @@ export class TopNavigation extends Component {
     this.state = {
       navBarTitle: "navTitle",
       navBarLogo: [whiteLogo],
+      nabVariant : "dark",
       navBarBackground: "navBackground",
       navBarItem: "navItem"
 
@@ -20,9 +21,9 @@ export class TopNavigation extends Component {
 
   onScroll = () => {
     if (window.scrollY > 100) {
-      this.setState({ navBarTitle: "navTitleScroll", navBarLogo:[blackLogo], navBarBackground:"navBackgroundScroll", navBarItem:"navItemScroll" });
+      this.setState({ navBarTitle: "navTitleScroll", navBarLogo:[blackLogo], navBarBackground:"navBackgroundScroll", navBarItem:"navItemScroll", nabVariant:'light' });
     } else if (window.scrollY < 100) {
-      this.setState({ navBarTitle: "navTitle", navBarLogo:[whiteLogo], navBarBackground:"navBackground",  navBarItem:"navItem" });
+      this.setState({ navBarTitle: "navTitle", navBarLogo:[whiteLogo], navBarBackground:"navBackground",  navBarItem:"navItem", nabVariant:'dark' });
     }
   };
 
@@ -37,7 +38,7 @@ export class TopNavigation extends Component {
           expand="lg"
           fixed="top"
           className={this.state.navBarBackground}          
-          data-bs-theme="dark"
+          variant={this.state.nabVariant} 
         >
           <Container>
             <Navbar.Brand href="#home" className={this.state.navBarTitle}>
