@@ -27,9 +27,9 @@ const NewsItem = ({ news }) => {
 
           <small className="text-secondary mb-2">
             {new Date(publishedAt).toLocaleDateString()}
-          </small>
+          </small>          
 
-          <p>{description}</p>
+          <p>{description ? description.slice(0,90) : "Voluptatibus quam corporis voluptatem praesentium iure, aliquid temporibus optio ducimus eligendi unde?"}</p>
 
           <p className="small text-muted flex-grow-1">
             {content ? content.slice(0, 120) + "..." : "No content available."}
