@@ -1,7 +1,7 @@
-export const Button = ({ label }) => {
+export const Button = ({ label = "Click Me", handleClick }) => {
   return (
     <div>
-      <button>{label || "Click Me"}</button>
+      <button onClick={handleClick}>{ label }</button>
     </div>
   );
 };
