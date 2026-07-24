@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Container, Navbar, Nav } from "react-bootstrap";
+import { Link, NavLink } from "react-router";
 
 import "../../assets/css/custom.css";
 
@@ -7,14 +8,15 @@ import blackLogo from '../../assets/images/black-logo.jpg'
 import whiteLogo from '../../assets/images/white-logo.jpg'
 
 export class TopNavigation extends Component {
-  constructor() {
+  constructor(props) {
     super();
     this.state = {
       navBarTitle: "navTitle",
       navBarLogo: [whiteLogo],
       nabVariant : "dark",
       navBarBackground: "navBackground",
-      navBarItem: "navItem"
+      navBarItem: "navItem",
+      pageTitle: props.title
 
     };
   }
@@ -34,6 +36,7 @@ export class TopNavigation extends Component {
   render() {
     return (
       <div>
+        <title>{this.state.pageTitle}</title>
         <Navbar 
           expand="lg"
           fixed="top"
@@ -41,19 +44,19 @@ export class TopNavigation extends Component {
           variant={this.state.nabVariant} 
         >
           <Container>
-            <Navbar.Brand href="#home" className={this.state.navBarTitle}>
+            <Navbar.Brand as={Link} to="/" className={this.state.navBarTitle}>
               <img src={this.state.navBarLogo} alt="" className="navBarLogo"/>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto"></Nav>
               <Nav>
-                <Nav.Link href="#link" className={this.state.navBarItem}>Home</Nav.Link>
-                <Nav.Link href="#link" className={this.state.navBarItem}>About</Nav.Link>
-                <Nav.Link href="#link"  className={this.state.navBarItem}>Service</Nav.Link>
-                <Nav.Link href="#link"  className={this.state.navBarItem}>Courses</Nav.Link>
-                <Nav.Link href="#link"  className={this.state.navBarItem}>Portfolio</Nav.Link>
-                <Nav.Link href="#link"  className={this.state.navBarItem}>Contact Us</Nav.Link>
+                <Nav.Link as={NavLink} to="/" className={({ isActive }) => isActive ? `${this.state.navBarItem} active` : this.state.navBarItem }>Home</Nav.Link>
+                <Nav.Link as={NavLink} to="/about" className={ ({isActive}) => isActive ? `${this.state.navBarItem} active` : this.state.navBarItem }>About</Nav.Link>               
+                <Nav.Link as={NavLink} to="/service"  className={({isActive}) => isActive ? `${this.state.navBarItem} active` : this.state.navBarItem }>Service</Nav.Link>
+                <Nav.Link as={NavLink} to="/courses"  className={({isActive}) => isActive ? `${this.state.navBarItem} active` : this.state.navBarItem }>Courses</Nav.Link>
+                <Nav.Link as={NavLink} to="/portfolio"  className={({isActive}) => isActive ? `${this.state.navBarItem} active` : this.state.navBarItem }>Portfolio</Nav.Link>
+                <Nav.Link as={NavLink} to="/contact"  className={({isActive}) => isActive ? `${this.state.navBarItem} active` : this.state.navBarItem }>Contact Us</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>

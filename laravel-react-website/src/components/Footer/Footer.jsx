@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -42,31 +43,31 @@ export class Footer extends Component {
               </Col>
               <Col lg={3} md={6} sm={12} className="p-5 text-center">
                 <h2 className="footerName">Information</h2>
-                <a href="" className="footerLink">
+                <Link to="/about" className="footerLink">
                   About Me
-                </a>
+                </Link>
                 <br />
-                <a href="" className="footerLink">
+                <Link to="/portfolio" className="footerLink">
                   Company Portfolio
-                </a>
+                </Link>
                 <br />
-                <a href="" className="footerLink">
+                <Link to="/contact" className="footerLink">
                   Contact Us
-                </a>
+                </Link>
               </Col>
               <Col lg={3} md={6} sm={12} className="p-5 text-center">
                 <h2 className="footerName">Policy</h2>
-                <a href="" className="footerLink">
+                <Link to="/refund-policy" className="footerLink">
                   Refund Policy
-                </a>
+                </Link>
                 <br />
-                <a href="" className="footerLink">
+                <Link to="/terms-conditions" className="footerLink">
                   Terms and Condition
-                </a>
+                </Link>
                 <br />
-                <a href="" className="footerLink">
-                  Private Policy
-                </a>
+                <Link to="/privacy-policy" className="footerLink">
+                  Privacy Policy
+                </Link>
               </Col>
             </Row>
           </Container>

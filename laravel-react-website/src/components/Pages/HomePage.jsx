@@ -11,13 +11,15 @@ import Videos from "../../components/Video/Videos";
 import ClientReview from "../../components/ClientReview/ClientReview";
 import AboutMe from "../../components/AboutMe/AboutMe";
 import Footer from "../../components/Footer/Footer";
+import WelcomeTo from "../WelcomeSection/WelcomeTo";
 
 export class HomePage extends Component {
   render() {
     return (
       <div>
-        <TopNavigation />
+        <TopNavigation title="Home Page"/>
         <TopBanner />
+        <WelcomeTo/>
         <Services />
         <Analysis />
         <Summery />

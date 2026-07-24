@@ -10,7 +10,7 @@ export class Services extends Component {
   render() {
     return (
       <div>
-        <Container className="text-center">
+        <Container className="text-center"><br />
             <h1 className="serviceMainTitle">My Services</h1>
             <div className="bottomBar"></div>
           <Row>
