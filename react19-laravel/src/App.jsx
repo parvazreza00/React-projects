@@ -3,6 +3,7 @@ import {UserCard} from "./components/feature/UserCard";
 import Header from "./components/layout/Header";
 import { Button } from "./components/UI/Button";
 import { Counter } from "./components/feature/Counter";
+import { Posts } from "./components/feature/Posts";
 
 function App() {
 
@@ -28,7 +29,8 @@ function App() {
 
       <Button label="Submit" handleClick={showAlert}/> */}
 
-      <Counter/>
+      {/* <Counter/> */}
+      <Posts/>
 
     </>
   );
