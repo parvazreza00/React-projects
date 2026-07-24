@@ -1,10 +1,11 @@
 import React from 'react'
 import { Outlet } from 'react-router'
+import Header from '../Components/ShareComponents/Header/Header'
 
 const Root = () => {
   return (
     <div>
-        <h2>Navbar here</h2>
+        <Header/>
         <Outlet/>
         <footer>Footer part</footer>
       
