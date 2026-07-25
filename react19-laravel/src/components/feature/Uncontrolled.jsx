@@ -3,6 +3,8 @@ import { useRef } from "react";
 export const Uncontrolled = () => {
     const fullNameRef = useRef();
     const emailRef = useRef();
+    const professionRef = useRef();
+    const degreeRef = useRef();
     const passwordRef = useRef();
 
 
@@ -13,6 +15,8 @@ export const Uncontrolled = () => {
         const data = {
             fullName: fullNameRef.current.value,
             email: emailRef.current.value,
+            profession: professionRef.current.value,
+            degree: degreeRef.current.value,
             password: passwordRef.current.value,
         };
         console.log(data);
@@ -26,6 +30,8 @@ export const Uncontrolled = () => {
        <form onSubmit={handleSubmit}>
          <input type="text" ref={fullNameRef} name="fullName" placeholder="Enter your Full Name"/><br />
         <input type="text" ref={emailRef} name="email" placeholder="Enter your Email"/><br />
+        <input type="text" ref={professionRef} name="profession" placeholder="Enter your Profession"/><br />
+        <input type="text" ref={degreeRef} name="degree" placeholder="Enter your Degree"/><br />
         <input type="password" ref={passwordRef} name="password"  placeholder="Enter your Password"/><br />
         <button type="submit">Submit</button>
        </form>

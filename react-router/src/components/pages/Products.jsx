@@ -53,7 +53,7 @@ const Products = () => {
               brand,
               category,
               price,
-              description,
+              description
               thumbnail,
             } = product;
 
