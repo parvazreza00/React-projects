@@ -4,6 +4,8 @@ import Header from "./components/layout/Header";
 import { Button } from "./components/UI/Button";
 import { Counter } from "./components/feature/Counter";
 import { Posts } from "./components/feature/Posts";
+import { Registration } from "./components/feature/Registration";
+import { Uncontrolled } from "./components/feature/Uncontrolled";
 
 function App() {
 
@@ -30,7 +32,9 @@ function App() {
       <Button label="Submit" handleClick={showAlert}/> */}
 
       {/* <Counter/> */}
-      <Posts/>
+      {/* <Posts/> */}
+      <Registration/>
+      <Uncontrolled/>
 
     </>
   );
