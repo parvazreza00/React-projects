@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import { Link } from "react-router";
 
 import courseImage1 from "../../assets/images/course-image1.jpg";
 
@@ -25,9 +26,9 @@ export class Courses extends Component {
                       Omnis error dicta odit eaque.
                     </p>
 
-                    <a href="" className="courseViewMore">
+                     <Link to="/course-details" className="courseViewMore">
                       View More
-                    </a>
+                    </Link>
                   </Col>
 
                   <Col lg={6} md={6} sm={12} className="p-2">
@@ -41,9 +42,9 @@ export class Courses extends Component {
                       Omnis error dicta odit eaque.
                     </p>
 
-                    <a href="" className="courseViewMore">
+                    <Link to="/course-details" className="courseViewMore">
                       View More
-                    </a>
+                    </Link>
                   </Col>
                 </Row>
               </Col>
@@ -60,9 +61,9 @@ export class Courses extends Component {
                       Omnis error dicta odit eaque.
                     </p>
 
-                    <a href="" className="courseViewMore">
+                    <Link to="/course-details" className="courseViewMore">
                       View More
-                    </a>
+                    </Link>
                   </Col>
 
                   <Col lg={6} md={6} sm={12} className="p-2">
@@ -76,9 +77,9 @@ export class Courses extends Component {
                       Omnis error dicta odit eaque.
                     </p>
 
-                    <a href="" className="courseViewMore">
+                     <Link to="/course-details" className="courseViewMore">
                       View More
-                    </a>
+                    </Link>
                   </Col>
                 </Row>
               </Col>

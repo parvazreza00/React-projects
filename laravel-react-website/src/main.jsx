@@ -17,6 +17,8 @@ import ContactPage from "./components/Pages/ContactPage.jsx";
 import RefundPage from "./components/Pages/RefundPage.jsx";
 import TermsConditionPage from "./components/Pages/TermsConditionPage.jsx";
 import PrivacyPolicyPace from "./components/Pages/PrivacyPolicyPace.jsx";
+import ProjectDetailsPage from "./components/Pages/ProjectDetailsPage.jsx";
+import CourseDetailsPage from "./components/Pages/CourseDetailsPage.jsx";
 
 const router = createBrowserRouter([
    {
@@ -56,7 +58,14 @@ const router = createBrowserRouter([
         path: "privacy-policy",
         element: <PrivacyPolicyPace />,
       },
-      
+      {
+        path: "project-details",
+        element: <ProjectDetailsPage />,
+      },
+      {
+        path: "course-details",
+        element: <CourseDetailsPage/>
+      }
     ]
   },
 ]);
