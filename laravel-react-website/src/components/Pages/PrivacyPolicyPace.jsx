@@ -5,7 +5,7 @@ import PrivacyPolicy from "../PrivacyPolicy/PrivacyPolicy";
 import Footer from "../Footer/Footer";
 
 export class PrivacyPolicyPace extends Component {
-   componentDidMount() {
+  componentDidMount() {
     window.scroll(0, 0);
   }
   render() {
