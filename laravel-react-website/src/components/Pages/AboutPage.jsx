@@ -6,6 +6,9 @@ import Footer from "../Footer/Footer";
 import AboutMe from "../AboutMe/AboutMe";
 
 export class AboutPage extends Component {
+  componentDidMount() {
+    window.scroll(0, 0);
+  }
   render() {
     return (
       <Fragment>

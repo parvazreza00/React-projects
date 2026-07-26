@@ -5,6 +5,9 @@ import RefundDescription from '../RefundDescription/RefundDescription'
 import Footer from '../Footer/Footer'
 
 export class RefundPage extends Component {
+   componentDidMount() {
+    window.scroll(0, 0);
+  }
   render() {
     return (
       <Fragment>

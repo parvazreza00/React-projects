@@ -5,6 +5,9 @@ import Footer from '../Footer/Footer'
 import AllProject from '../AllProject/AllProject'
 
 export class PortfolioPage extends Component {
+   componentDidMount() {
+    window.scroll(0, 0);
+  }
   render() {
     return (
       <Fragment>

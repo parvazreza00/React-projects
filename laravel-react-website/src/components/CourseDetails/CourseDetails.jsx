@@ -1,9 +1,20 @@
-import React, { Component, Fragment } from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheckCircle, faClock, faUser,faList, faBookOpen, faSignal, faGlobe, faStar, faStarHalfAlt, faUserTie } from '@fortawesome/free-solid-svg-icons'
-import courseImage1 from '../../assets/images/course-image1.jpg'
-import codingMan from '../../assets/images/coding-man.jpg'
+import React, { Component, Fragment } from "react";
+import { Col, Container, Row } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCheckCircle,
+  faClock,
+  faUser,
+  faList,
+  faBookOpen,
+  faSignal,
+  faGlobe,
+  faStar,
+  faStarHalfAlt,
+  faUserTie,
+} from "@fortawesome/free-solid-svg-icons";
+import courseImage1 from "../../assets/images/course-image1.jpg";
+import codingMan from "../../assets/images/coding-man.jpg";
 
 export class CourseDetails extends Component {
   render() {
@@ -14,32 +25,44 @@ export class CourseDetails extends Component {
             {/* Left Column - Course Content */}
             <Col lg={8} md={6} sm={12}>
               <div className="course-main-content">
-                <h1 className="course-detail-title">Complete Laravel 13 Development Course</h1>
-                
+                <h1 className="course-detail-title">
+                  Complete Laravel 13 Development Course
+                </h1>
+
                 <div className="course-detail-image-wrapper">
-                  <img src={courseImage1} alt="Laravel Course" className="course-detail-image" />
+                  <img
+                    src={courseImage1}
+                    alt="Laravel Course"
+                    className="course-detail-image"
+                  />
                 </div>
 
                 <div className="course-detail-meta">
                   <span className="course-detail-meta-item">
-                    <FontAwesomeIcon icon={faUserTie} className="meta-icon" /> By John Doe
+                    <FontAwesomeIcon icon={faUserTie} className="meta-icon" />{" "}
+                    By John Doe
                   </span>
                   <span className="course-detail-meta-item">
-                    <FontAwesomeIcon icon={faStar} className="star-icon" /> 4.8 (2.4k reviews)
+                    <FontAwesomeIcon icon={faStar} className="star-icon" /> 4.8
+                    (2.4k reviews)
                   </span>
                   <span className="course-detail-meta-item">
-                    <FontAwesomeIcon icon={faClock} className="meta-icon" /> Last updated 02/2025
+                    <FontAwesomeIcon icon={faClock} className="meta-icon" />{" "}
+                    Last updated 02/2025
                   </span>
                 </div>
 
                 <h3 className="section-sub-title">Description</h3>
                 <p className="course-description-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat excepturi eius accusamus, 
-                  vero fugit saepe ad soluta doloribus accusantium harum provident neque, labore error odio! 
-                  Consequatur expedita laudantium voluptates quos ducimus sed incidunt accusamus illo? Nobis, 
-                  velit quasi! Rerum earum quo quidem eos dolorem quaerat sint, magni voluptatem aperiam sunt.
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, impedit. Sit voluptas doloremque 
-                  asperiores minima, repudiandae voluptates maiores modi non.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Repellat excepturi eius accusamus, vero fugit saepe ad soluta
+                  doloribus accusantium harum provident neque, labore error
+                  odio! Consequatur expedita laudantium voluptates quos ducimus
+                  sed incidunt accusamus illo? Nobis, velit quasi! Rerum earum
+                  quo quidem eos dolorem quaerat sint, magni voluptatem aperiam
+                  sunt. Lorem ipsum dolor sit amet consectetur, adipisicing
+                  elit. Quis, impedit. Sit voluptas doloremque asperiores
+                  minima, repudiandae voluptates maiores modi non.
                 </p>
 
                 <h3 className="section-sub-title">Course Curriculum</h3>
@@ -50,8 +73,12 @@ export class CourseDetails extends Component {
                         <FontAwesomeIcon icon={faBookOpen} />
                       </span>
                       <div>
-                        <span className="curriculum-title">Introduction to Laravel 13</span>
-                        <span className="curriculum-desc">Overview, installation & environment setup</span>
+                        <span className="curriculum-title">
+                          Introduction to Laravel 13
+                        </span>
+                        <span className="curriculum-desc">
+                          Overview, installation & environment setup
+                        </span>
                       </div>
                     </div>
                     <span className="curriculum-duration">2h 30m</span>
@@ -62,8 +89,12 @@ export class CourseDetails extends Component {
                         <FontAwesomeIcon icon={faBookOpen} />
                       </span>
                       <div>
-                        <span className="curriculum-title">Routing & Controllers</span>
-                        <span className="curriculum-desc">Understanding routes, controllers & middleware</span>
+                        <span className="curriculum-title">
+                          Routing & Controllers
+                        </span>
+                        <span className="curriculum-desc">
+                          Understanding routes, controllers & middleware
+                        </span>
                       </div>
                     </div>
                     <span className="curriculum-duration">3h 15m</span>
@@ -74,8 +105,12 @@ export class CourseDetails extends Component {
                         <FontAwesomeIcon icon={faBookOpen} />
                       </span>
                       <div>
-                        <span className="curriculum-title">Blade Templating Engine</span>
-                        <span className="curriculum-desc">Mastering Blade directives, layouts & components</span>
+                        <span className="curriculum-title">
+                          Blade Templating Engine
+                        </span>
+                        <span className="curriculum-desc">
+                          Mastering Blade directives, layouts & components
+                        </span>
                       </div>
                     </div>
                     <span className="curriculum-duration">4h 00m</span>
@@ -86,8 +121,12 @@ export class CourseDetails extends Component {
                         <FontAwesomeIcon icon={faBookOpen} />
                       </span>
                       <div>
-                        <span className="curriculum-title">Eloquent ORM & Database</span>
-                        <span className="curriculum-desc">Migrations, models, relationships & queries</span>
+                        <span className="curriculum-title">
+                          Eloquent ORM & Database
+                        </span>
+                        <span className="curriculum-desc">
+                          Migrations, models, relationships & queries
+                        </span>
                       </div>
                     </div>
                     <span className="curriculum-duration">5h 30m</span>
@@ -98,8 +137,12 @@ export class CourseDetails extends Component {
                         <FontAwesomeIcon icon={faBookOpen} />
                       </span>
                       <div>
-                        <span className="curriculum-title">Authentication & Authorization</span>
-                        <span className="curriculum-desc">User auth, gates, policies & roles</span>
+                        <span className="curriculum-title">
+                          Authentication & Authorization
+                        </span>
+                        <span className="curriculum-desc">
+                          User auth, gates, policies & roles
+                        </span>
                       </div>
                     </div>
                     <span className="curriculum-duration">3h 45m</span>
@@ -110,8 +153,12 @@ export class CourseDetails extends Component {
                         <FontAwesomeIcon icon={faBookOpen} />
                       </span>
                       <div>
-                        <span className="curriculum-title">API Development with Laravel</span>
-                        <span className="curriculum-desc">RESTful APIs, Sanctum & API resources</span>
+                        <span className="curriculum-title">
+                          API Development with Laravel
+                        </span>
+                        <span className="curriculum-desc">
+                          RESTful APIs, Sanctum & API resources
+                        </span>
                       </div>
                     </div>
                     <span className="curriculum-duration">4h 20m</span>
@@ -121,27 +168,49 @@ export class CourseDetails extends Component {
                 <h3 className="section-sub-title">What You'll Learn</h3>
                 <div className="learn-grid">
                   <div className="learn-item">
-                    <FontAwesomeIcon icon={faCheckCircle} className="learn-icon" />
-                    <span>Build real-world Laravel applications from scratch</span>
+                    <FontAwesomeIcon
+                      icon={faCheckCircle}
+                      className="learn-icon"
+                    />
+                    <span>
+                      Build real-world Laravel applications from scratch
+                    </span>
                   </div>
                   <div className="learn-item">
-                    <FontAwesomeIcon icon={faCheckCircle} className="learn-icon" />
+                    <FontAwesomeIcon
+                      icon={faCheckCircle}
+                      className="learn-icon"
+                    />
                     <span>Master Eloquent ORM and database relationships</span>
                   </div>
                   <div className="learn-item">
-                    <FontAwesomeIcon icon={faCheckCircle} className="learn-icon" />
-                    <span>Implement authentication & authorization systems</span>
+                    <FontAwesomeIcon
+                      icon={faCheckCircle}
+                      className="learn-icon"
+                    />
+                    <span>
+                      Implement authentication & authorization systems
+                    </span>
                   </div>
                   <div className="learn-item">
-                    <FontAwesomeIcon icon={faCheckCircle} className="learn-icon" />
+                    <FontAwesomeIcon
+                      icon={faCheckCircle}
+                      className="learn-icon"
+                    />
                     <span>RESTful API development with Laravel</span>
                   </div>
                   <div className="learn-item">
-                    <FontAwesomeIcon icon={faCheckCircle} className="learn-icon" />
+                    <FontAwesomeIcon
+                      icon={faCheckCircle}
+                      className="learn-icon"
+                    />
                     <span>Deploy and maintain Laravel applications</span>
                   </div>
                   <div className="learn-item">
-                    <FontAwesomeIcon icon={faCheckCircle} className="learn-icon" />
+                    <FontAwesomeIcon
+                      icon={faCheckCircle}
+                      className="learn-icon"
+                    />
                     <span>Testing and debugging Laravel applications</span>
                   </div>
                 </div>
@@ -152,13 +221,16 @@ export class CourseDetails extends Component {
             <Col lg={4} md={6} sm={12}>
               <div className="course-info-sidebar">
                 <div className="sidebar-header">
-                  <img src={codingMan} alt="Instructor" className="instructor-avatar" />
+                  <img
+                    src={codingMan}
+                    alt="Instructor"
+                    className="instructor-avatar"
+                  />
                   <div>
                     <h5 className="instructor-name">John Doe</h5>
                     <p className="instructor-title">Senior Laravel Developer</p>
                   </div>
                 </div>
-               
 
                 <div className="course-price-section">
                   <span className="course-price">$49.99</span>
@@ -222,7 +294,10 @@ export class CourseDetails extends Component {
                       <FontAwesomeIcon icon={faStar} className="star-icon" />
                       <FontAwesomeIcon icon={faStar} className="star-icon" />
                       <FontAwesomeIcon icon={faStar} className="star-icon" />
-                      <FontAwesomeIcon icon={faStarHalfAlt} className="star-icon" />
+                      <FontAwesomeIcon
+                        icon={faStarHalfAlt}
+                        className="star-icon"
+                      />
                     </div>
                     <span className="rating-score">4.8</span>
                   </div>
@@ -231,61 +306,79 @@ export class CourseDetails extends Component {
               </div>
             </Col>
           </Row>
+
           <Row className="mt-5">
-            <Col lg={12}>
-              <h2 className="section-sub-title text-center">Related Courses</h2>
-              <div className="bottomBar"></div>
-            </Col>
-            <Col lg={4} md={6} sm={12} className="mt-4">
-              <div className="related-course-card">
-                <img src={courseImage1} alt="Related Course" className="related-course-img" />
-                <div className="related-course-body">
-                  <h5 className="related-course-name">React.js Complete Guide</h5>
-                  <p className="related-course-desc">Learn React.js from scratch with hooks, context API and Redux</p>
-                  <div className="related-course-footer">
-                    <span className="related-course-price">$39.99</span>
-                    <span className="related-course-rating">
-                      <FontAwesomeIcon icon={faStar} className="star-icon" /> 4.7
-                    </span>
-                  </div>
+            <h1 className="text-center">Which Skills You needed</h1>
+            <Col lg={6} md={6} sm={12}>
+              <div className="learn-grid">
+                <div className="learn-item">
+                  <FontAwesomeIcon
+                    icon={faCheckCircle}
+                    className="learn-icon"
+                  />
+                  <span>HTML5 AND CSS3 Knowledge</span>
+                </div>
+                <div className="learn-item">
+                  <FontAwesomeIcon
+                    icon={faCheckCircle}
+                    className="learn-icon"
+                  />
+                  <span>JavaScript BASICS AND ES6/ES7 CONCEPT</span>
+                </div>
+                <div className="learn-item">
+                  <FontAwesomeIcon
+                    icon={faCheckCircle}
+                    className="learn-icon"
+                  />
+                  <span>BASIC PHP AND MYSQL</span>
+                </div>
+                <div className="learn-item">
+                  <FontAwesomeIcon
+                    icon={faCheckCircle}
+                    className="learn-icon"
+                  />
+                  <span>BASIC PHP AND MYSQL</span>
                 </div>
               </div>
+              <div></div>
             </Col>
-            <Col lg={4} md={6} sm={12} className="mt-4">
-              <div className="related-course-card">
-                <img src={courseImage1} alt="Related Course" className="related-course-img" />
-                <div className="related-course-body">
-                  <h5 className="related-course-name">Vue.js 3 Masterclass</h5>
-                  <p className="related-course-desc">Master Vue.js 3 with Composition API, Vuex and Vue Router</p>
-                  <div className="related-course-footer">
-                    <span className="related-course-price">$44.99</span>
-                    <span className="related-course-rating">
-                      <FontAwesomeIcon icon={faStar} className="star-icon" /> 4.8
-                    </span>
-                  </div>
+            <Col lg={6} md={6} sm={12}>
+              <div className="learn-grid">
+                <div className="learn-item">
+                  <FontAwesomeIcon
+                    icon={faCheckCircle}
+                    className="learn-icon"
+                  />
+                  <span>BASIC LARAVEL </span>
                 </div>
-              </div>
-            </Col>
-            <Col lg={4} md={6} sm={12} className="mt-4">
-              <div className="related-course-card">
-                <img src={courseImage1} alt="Related Course" className="related-course-img" />
-                <div className="related-course-body">
-                  <h5 className="related-course-name">Full Stack Web Development</h5>
-                  <p className="related-course-desc">Become a full stack developer with Node.js, React and MongoDB</p>
-                  <div className="related-course-footer">
-                    <span className="related-course-price">$59.99</span>
-                    <span className="related-course-rating">
-                      <FontAwesomeIcon icon={faStar} className="star-icon" /> 4.9
-                    </span>
-                  </div>
+                <div className="learn-item">
+                  <FontAwesomeIcon
+                    icon={faCheckCircle}
+                    className="learn-icon"
+                  />
+                  <span>MYSQL</span>
+                </div>
+                <div className="learn-item">
+                  <FontAwesomeIcon
+                    icon={faCheckCircle}
+                    className="learn-icon"
+                  />
+                  <span>AND LEARNING PASSION</span>
+                </div>
+                <div className="learn-item">
+                  <FontAwesomeIcon
+                    icon={faCheckCircle}
+                    className="learn-icon"
+                  />
+                  <span>AND LEARNING PASSION</span>
                 </div>
               </div>
             </Col>
           </Row>
         </Container>
       </Fragment>
-    )
+    );
   }
 }
 
-export default CourseDetails
+export default CourseDetails;

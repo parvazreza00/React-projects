@@ -5,6 +5,9 @@ import CourseDetails from '../CourseDetails/CourseDetails'
 import Footer from '../Footer/Footer'
 
 export class CourseDetailsPage extends Component {
+   componentDidMount() {
+    window.scroll(0, 0);
+  }
   render() {
     return (
       <Fragment>

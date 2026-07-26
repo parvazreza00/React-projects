@@ -5,6 +5,9 @@ import Services from '../services/Services'
 import Footer from '../Footer/Footer'
 
 export class ServicesPage extends Component {
+   componentDidMount() {
+    window.scroll(0, 0);
+  }
   render() {
     return (
       <Fragment>
