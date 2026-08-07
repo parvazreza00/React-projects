@@ -1,4 +1,3 @@
-import React from "react";
 import Logo from "../../../assets/images/logo.png";
 import { CiUser } from "react-icons/ci";
 import { CiShoppingCart } from "react-icons/ci";
